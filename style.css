@@ -11,7 +11,6 @@ body {
     font-family: var(--fonte-padrao);
     margin: 0px;
     padding: 0px;
-    border: 1px solid #BABABA;
     background: linear-gradient(180deg, rgba(12, 112, 242, 0.50) 24.08%, rgba(12, 112, 242, 0.00) 30.1%), #303030;
 }
 
@@ -264,4 +263,56 @@ footer .linha2 a{
 
 footer .linha2 a:first-child{
     border-right: 3px solid white;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+
+    /* HEADER */
+    #navHeader{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #menu{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #menu a {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+
+    #navHeader button {
+        height: 100%;
+        margin: 0px;
+    }
+
+    /* SECTION */
+    section h1{
+        font-size: 38px;
+    }
+
+    section p{
+        font-size: 28px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    form {
+        width: 95px;
+        font-size: 20px;
+    }
+
+    .checkboxItens label{
+        font-size: 17px;
+    }
 }
